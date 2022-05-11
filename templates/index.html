@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Mikolai Mazurek CV</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<img src="{{ url_for('static',filename='images/me.jpg') }}" class="image avatar" alt="" />
+					<h1><strong>Mikolai Mazurek</strong> <br/><br/>Wanted position <br/>Python Developer<br/>
+						<br/><br/>Additional position <br/>Technical Support L2 or L3<br/></h1>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>About me</h2>
+						</header>
+						<p>Self-learning person, searching for opportunity, ready for troubleshooting any issue, highly motivated to jump from Technical support engineer into development.
+
+							<br/>Currently I'm working as Tech Support L2 at Luxoft, but my desire is to code on python or become DevOps engineer.
+							<h2><strong>About my skills and knowledge:</h2></strong>
+
+								 Advanced English skills (C1 certificate)
+							<br/>Working experience with Amazon Web Services (S3 and Cloud watch)
+							<br/>Basic knowledge of SQL (certificate)
+							<br/>Basic Knowledge how to deply website on Nginx  
+							<br/>Basic working experience with GIT (add, commit, branch, checkout, merge)
+							<br/>Knowledge of HTML/CSS basics (certificates)
+							<br/>Linux
+							<br/>Python 
+							<br/>Understanding client-server architecture
+							<br/>Understanding SDLC
+							
+							
+							<br/><br/><h3><strong>Additional information: </h3></strong>
+							
+								 Can work with people of different nationalities and cultures
+							<br/>Multiple language knowledge : Polish , Ukranian
+							<br/>Team player
+							<br/>Currently Working as Tech support L2 </p>
+							
+							<a href="Mikolai_Mazurek_VisualCV_Resume.pdf" class="resume"  download>Download CV</a><ul class="actions">
+
+							
+						</ul>
+					</section>
+
+				<!-- Two -->
+			
+				<!-- Three -->
+					<section id="three">
+						<h2>Get In Touch</h2>
+						<div class="row">
+							<div class="col-8 col-12-small">
+								<form method="post" action="/">
+
+
+									{% for cat, msg in get_flashed_messages(True) %}
+									<div class="flash {{cat}}">{{msg}}</div>
+									{% endfor%}
+	
+									<div class="row gtr-uniform gtr-50">
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Your email" /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+									</div>
+									<br/>
+								
+								<ul class="actions">
+									<li><input type="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+							</div>
+							<div class="col-4 col-12-small">
+								<ul class="labeled-icons">
+									<li>
+										<h3 class="icon solid fa-home"><span class="label">Address</span></h3>
+										Zamość, Lubelskie<br />
+										Poland<br />
+										
+									</li>
+									<li>
+										<h3 class="icon solid fa-mobile-alt"><span class="label">Phone</span></h3>
+										+48537183673
+									</li>
+									<li>
+										<h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+										<a href="mailto:mikolajmazurekwork@gmail.com">mikolajmazurekwork@gmail.com</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+			
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://t.me/Nikolai_Maz" class="icon brands fa-telegram"><span class="label">Telegram</span></a></li>
+						<li><a href="https://www.linkedin.com/in/mikolai-mazurek-19b5401b7/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+						<li><a href="mailto:mikolajmazurekwork@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Mikolai Mazurek</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>Web server: Nginx</li>
+						
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.poptrox.min.js') }}"></script>
+	   	<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+	   	<script src="{{ url_for('static' ,filename='js/breakpoints.min.js') }}"></script>
+	   	<script src="{{url_for('static',  filename='js/util.js') }}"></script>
+	   	<script src="{{ url_for('static' ,filename='js/main.js') }}"></script>
+
+	</body>
+</html>

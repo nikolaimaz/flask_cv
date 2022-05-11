@@ -1,0 +1,13 @@
+click
+Flask
+Flask-SQLAlchemy
+greenlet==1.1.2
+importlib-metadata
+itsdangerous
+Jinja2
+MarkupSafe
+psycopg2-binary
+python-dotenv
+SQLAlchemy
+Werkzeug
+zipp
